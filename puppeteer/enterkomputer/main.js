@@ -20,10 +20,11 @@ const puppeteer = require('puppeteer');
         }));
     });
 
-    console.log(products);
+    const products_filter = products.filter(obj => obj.ps_product__title !== "");
+    console.log(products_filter);
 
     // Convert to JSON string
-    const jsonData = JSON.stringify(products, null, 2); // Indented for readability
+    const jsonData = JSON.stringify(products_filter, null, 2); // Indented for readability
 
     // Write JSON to file
     fs.writeFileSync('products.json', jsonData);
