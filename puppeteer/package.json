@@ -1,16 +1,5 @@
 {
-  "name": "ig_auto",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "puppeteer": "^21.6.0"
+    "puppeteer": "^22.6.0"
   }
 }
